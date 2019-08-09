@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import React, { Component } from 'react'
 import { ApolloProvider } from 'react-apollo'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
@@ -13,8 +14,13 @@ class App extends Component {
         <ThemeProvider theme={theme}>
           <ApolloProvider client={client}>
             <div className="App">
+              {/* <nav>
+                <a href="/">Home</a>
+                <a href="/Film">Film</a>
+              </nav> */}
               <Switch>
                 <Route path="/" component={Home} />
+                {/* <Route path="/Film" component={Film} /> */}
               </Switch>
             </div>
           </ApolloProvider>
